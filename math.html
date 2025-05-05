@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - EduPlatform</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 80px;
+        background-color: #f8f9fa;
+      }
+      .topic-card {
+        border-left: 5px solid #ffce32;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+      }
+      .topic-btn {
+        border-radius: 9999px;
+        font-weight: bold;
+      }
+      .score {
+        color: red;
+        font-weight: bold;
+      }
+      .topic-content-icon {
+        background: #e6f3fc;
+        border-radius: 50%;
+        padding: 10px;
+        display: inline-block;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <a class="navbar-brand" href="dashboard.html">EduPlatform</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 class="text-center">Math</h1>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="accordion" id="topicsAccordion">
+       <!-- Topic 1 -->
+<div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button
+          class="btn btn-link btn-block text-left font-weight-bold"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseOne"
+          aria-expanded="false"
+          aria-controls="collapseOne"
+        >
+          Lesson 1: Numbers and Counting
+        </button>
+      </h2>
+    </div>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+      <div class="card-body bg-light">
+        <!-- Lesson File -->
+        <div class="d-flex align-items-center mb-3">
+          <div class="topic-content-icon mr-2">📄</div>
+          <a href="math-lesson1.html" class="text-primary font-weight-bold">
+            Topic Content
+          </a>
+        </div>
+  
+        <!-- Topic Info Card -->
+        <div class="topic-card d-flex justify-content-between align-items-center flex-wrap">
+          <div class="mb-3 mb-md-0">
+            <div class="score mt-1" id="lesson1-score">0/10 Score</div>
+          </div>
+          <a href="math-lesson1quiz.html" class="btn btn-primary topic-btn">Start Quiz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+        <!-- Topic 2 -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left font-weight-bold"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Lesson 2: Basic Addition and Subtraction
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+          >
+            <div class="card-body bg-light">
+              <!-- Lesson File -->
+              <div class="d-flex align-items-center mb-3">
+                <div class="topic-content-icon mr-2">📄</div>
+                <a href="math-lesson2.html" class="text-primary font-weight-bold">
+                  Topic Content
+                </a>
+              </div>
+
+              <!-- Topic Info Card -->
+              <div class="topic-card d-flex justify-content-between align-items-center flex-wrap">
+                <div class="mb-3 mb-md-0">
+                  <div class="score mt-1">0/10 Score</div>
+                </div>
+                <a href="math-lesson2quiz.html" class="btn btn-primary topic-btn">Start Quiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Topic 3 -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left font-weight-bold"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Lesson 3: Multiplication and Division
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+          >
+            <div class="card-body bg-light">
+              <!-- Lesson File -->
+              <div class="d-flex align-items-center mb-3">
+                <div class="topic-content-icon mr-2">📄</div>
+                <a href="math-lesson3.html" class="text-primary font-weight-bold">
+                  Topic Content
+                </a>
+              </div>
+
+              <!-- Topic Info Card -->
+              <div class="topic-card d-flex justify-content-between align-items-center flex-wrap">
+                <div class="mb-3 mb-md-0">
+                  <div class="score mt-1">0/10 Score</div>
+                </div>
+                <a href="math-lesson3quiz.html" class="btn btn-primary topic-btn">Start Quiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Topic 4 -->
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left font-weight-bold"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Lesson 4: Shapes and Patterns
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+          >
+            <div class="card-body bg-light">
+              <!-- Lesson File -->
+              <div class="d-flex align-items-center mb-3">
+                <div class="topic-content-icon mr-2">📄</div>
+                <a href="math-lesson4.html" class="text-primary font-weight-bold">
+                  Topic Content
+                </a>
+              </div>
+
+              <!-- Topic Info Card -->
+              <div class="topic-card d-flex justify-content-between align-items-center flex-wrap">
+                <div class="mb-3 mb-md-0">
+                  <div class="score mt-1">0/10 Score</div>
+                </div>
+                <a href="math-lesson4quiz.html" class="btn btn-primary topic-btn">Start Quiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Topic 5 -->
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left font-weight-bold"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Lesson 5: Fractions (basic)
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+          >
+            <div class="card-body bg-light">
+              <!-- Lesson File -->
+              <div class="d-flex align-items-center mb-3">
+                <div class="topic-content-icon mr-2">📄</div>
+                <a href="math-lesson5.html" class="text-primary font-weight-bold">
+                  Topic Content
+                </a>
+              </div>
+
+              <!-- Topic Info Card -->
+              <div class="topic-card d-flex justify-content-between align-items-center flex-wrap">
+                <div class="mb-3 mb-md-0">
+                  <div class="score mt-1">0/10 Score</div>
+                </div>
+                <a href="math-lesson5quiz.html" class="btn btn-primary topic-btn">Start Quiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      const accordion = document.getElementById("topicsAccordion");
+      const allCollapses = accordion.querySelectorAll(".collapse");
+
+      accordion.addEventListener("show.bs.collapse", function (event) {
+        allCollapses.forEach((collapse) => {
+          if (collapse !== event.target && collapse.classList.contains("show")) {
+            bootstrap.Collapse.getInstance(collapse).hide();
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const score = localStorage.getItem('lesson1Score');
+          if (score !== null) {
+              document.getElementById('lesson1-score').textContent = ${score}/3 Score;
+          }
+      });
+  </script>
+  
+  </body>
+</html>

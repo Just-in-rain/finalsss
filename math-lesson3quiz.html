@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multiplication and Division Quiz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding-top: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .quiz-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .question p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    label {
+      display: block;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <a class="navbar-brand" href="dashboard.html">EduPlatform</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+      <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="quiz-container">
+  <h1>Multiplication and Division Quiz</h1>
+  <form id="quiz-form">
+    <div class="question">
+      <p>1. What is 4 × 6?</p>
+      <label><input type="radio" name="q1" value="a"> A) 10</label>
+      <label><input type="radio" name="q1" value="b"> B) 24</label>
+      <label><input type="radio" name="q1" value="c"> C) 20</label>
+      <label><input type="radio" name="q1" value="d"> D) 46</label>
+    </div>
+    <div class="question">
+      <p>2. If you have 15 cookies and want to share them equally among 3 children, how many cookies will each child get?</p>
+      <label><input type="radio" name="q2" value="a"> A) 3</label>
+      <label><input type="radio" name="q2" value="b"> B) 4</label>
+      <label><input type="radio" name="q2" value="c"> C) 5</label>
+      <label><input type="radio" name="q2" value="d"> D) 6</label>
+    </div>
+    <div class="question">
+      <p>3. Which shows 3 × 4 as repeated addition?</p>
+      <label><input type="radio" name="q3" value="a"> A) 3 + 3 + 3 + 3</label>
+      <label><input type="radio" name="q3" value="b"> B) 4 + 4 + 4</label>
+      <label><input type="radio" name="q3" value="c"> C) 3 + 4</label>
+      <label><input type="radio" name="q3" value="d"> D) 3 × 4</label>
+    </div>
+    <div class="question">
+      <p>4. What is 18 ÷ 2?</p>
+      <label><input type="radio" name="q4" value="a"> A) 7</label>
+      <label><input type="radio" name="q4" value="b"> B) 8</label>
+      <label><input type="radio" name="q4" value="c"> C) 9</label>
+      <label><input type="radio" name="q4" value="d"> D) 16</label>
+    </div>
+    <div class="question">
+      <p>5. Which multiplication property shows that 2 × 7 = 7 × 2?</p>
+      <label><input type="radio" name="q5" value="a"> A) Zero Property</label>
+      <label><input type="radio" name="q5" value="b"> B) Commutative Property</label>
+      <label><input type="radio" name="q5" value="c"> C) Associative Property</label>
+      <label><input type="radio" name="q5" value="d"> D) Identity Property</label>
+    </div>
+    <div class="question">
+      <p>6. How many groups of 4 can you make from 20 objects?</p>
+      <label><input type="radio" name="q6" value="a"> A) 4</label>
+      <label><input type="radio" name="q6" value="b"> B) 5</label>
+      <label><input type="radio" name="q6" value="c"> C) 6</label>
+      <label><input type="radio" name="q6" value="d"> D) 16</label>
+    </div>
+    <div class="question">
+      <p>7. What division problem is related to 6 × 7 = 42?</p>
+      <label><input type="radio" name="q7" value="a"> A) 42 ÷ 6 = 7</label>
+      <label><input type="radio" name="q7" value="b"> B) 42 ÷ 7 = 6</label>
+      <label><input type="radio" name="q7" value="c"> C) Both A and B</label>
+      <label><input type="radio" name="q7" value="d"> D) 42 ÷ 13 = 29</label>
+    </div>
+    <div class="question">
+      <p>8. Using skip counting by 3s, which number would you NOT say when counting to 30?</p>
+      <label><input type="radio" name="q8" value="a"> A) 3</label>
+      <label><input type="radio" name="q8" value="b"> B) 9</label>
+      <label><input type="radio" name="q8" value="c"> C) 16</label>
+      <label><input type="radio" name="q8" value="d"> D) 27</label>
+    </div>
+    <div class="question">
+      <p>9. What is 0 × 9?</p>
+      <label><input type="radio" name="q9" value="a"> A) 0</label>
+      <label><input type="radio" name="q9" value="b"> B) 9</label>
+      <label><input type="radio" name="q9" value="c"> C) 1</label>
+      <label><input type="radio" name="q9" value="d"> D) Cannot be determined</label>
+    </div>
+    <div class="question">
+      <p>10. If you arrange 15 stars in 3 equal rows, how many stars will be in each row?</p>
+      <label><input type="radio" name="q10" value="a"> A) 3</label>
+      <label><input type="radio" name="q10" value="b"> B) 5</label>
+      <label><input type="radio" name="q10" value="c"> C) 12</label>
+      <label><input type="radio" name="q10" value="d"> D) 18</label>
+    </div>
+
+    <button type="submit" id="submit-button">Submit Quiz</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const resultElement = document.getElementById("result");
+    const submitButton = document.getElementById("submit-button");
+    const quizForm = document.getElementById("quiz-form");
+
+    const quizTaken = localStorage.getItem('quizMultiplicationDivisionTaken');
+    const storedScore = localStorage.getItem('quizMultiplicationDivisionScore');
+
+    if (quizTaken === 'true' && storedScore !== null) {
+      resultElement.textContent = `Your score: ${storedScore} out of 10`;
+      resultElement.style.display = "block";
+      submitButton.disabled = true;
+    } else {
+      quizForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let score = 0;
+        const answers = {
+          q1: "b",
+          q2: "c",
+          q3: "b",
+          q4: "c",
+          q5: "b",
+          q6: "b",
+          q7: "c",
+          q8: "c",
+          q9: "a",
+          q10: "b"
+        };
+
+        const formData = new FormData(quizForm);
+        for (let question in answers) {
+          if (formData.get(question) === answers[question]) {
+            score++;
+          }
+        }
+
+        localStorage.setItem('quizFiveSensesScore', score);
+        localStorage.setItem('quizFiveSensesTaken', 'true');
+        resultElement.textContent = Your score: ${score} out of 10;
+        resultElement.style.display = "block";
+        submitButton.disabled = true;
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
